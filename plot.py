@@ -42,16 +42,16 @@ y_fit = np.exp(log_y_fit)
 # Plot the actual data
 plt.figure(figsize=(10, 6))
 plt.plot(data['Date'], data['CumulativeCount'], '.-', label='Cumulative Count')
-plt.scatter(data.iloc[2]['Date'], data.iloc[2]['CumulativeCount'], color='red', marker='x', s=100, label='Point 3')
+plt.scatter(data.iloc[3]['Date'], data.iloc[2]['CumulativeCount'], color='red', marker='x', s=100, label='Vaswani et al. (2017)')
 
 # Plot the fit line with actual dates and counts
 nu=round(exponent,2)
 plt.plot(data['Date'], y_fit, color='orange', label=f'Power-law Fit ($y \sim t^{{{nu}}}$)')
 
 # Set the labels and title
-plt.xlabel('Date')
+plt.xlabel('Year')
 plt.ylabel('Cumulative Count')
-plt.title('Cumulative Count of Papers Over Time with Power-law Fit')
+plt.title('...is all you need arXiv papers (cumulative) power law')
 plt.legend()
 plt.grid(True)
 plt.tight_layout()

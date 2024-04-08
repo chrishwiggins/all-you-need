@@ -19,3 +19,5 @@ plot: dates-chron.txt plot.py
 clean:
 	rm -f get.out dates-chron.txt
 
+edit:
+	vi plot.py
