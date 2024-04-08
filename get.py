@@ -1,3 +1,6 @@
+"""
+chris.wiggins@gmail.com 2024-04-08
+"""
 import arxiv
 
 # Construct the default API client
